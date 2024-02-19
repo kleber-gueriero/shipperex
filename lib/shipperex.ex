@@ -3,16 +3,8 @@ defmodule Shipperex do
   Documentation for `Shipperex`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Shipperex.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  # @spec calculate_freight(Shipperex.CalculateFreight.Input.t, list) :: Shipperex.CalculateFreight.result
+  def calculate_freight(params, opts \\ []) do
+    Shipperex.CalculateFreight.call(params, opts)
   end
 end
